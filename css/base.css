@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+	color: #1c80a8;
+	transition: color .35s ease;
+}
+a:hover {
+	color: #33ccff;
+}
+
+html {
+	background-color: #444;
+}
+
+body {
+	font-family: 'Source Sans Pro', 'Segoe UI', Arial, sans-serif;
+}

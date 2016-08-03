@@ -1,0 +1,114 @@
+
+/* =====================
+	generelles Layout
+======================== */
+
+	/* Wrapper-Klassen  */
+
+	.wrapper {
+		max-width: 960px;
+		margin: 0 auto;
+		background-color: #282828;
+	}
+
+
+	/* Header */
+
+	.header {
+		background-color: #0c0d0d;
+		overflow: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.header__logo {
+		width: 30%;
+		float: left;
+		padding: 1em;
+		border-right: 3px solid #fff;
+	}
+	.header__navigation {
+		width: 70%;
+		float: right;
+		padding: 0 1em;
+	}
+
+	/* Content */
+
+	.content {
+
+	}
+
+	/* Teaser */
+
+	.content__teaser {
+		height: 50vh;
+		background: url('https://unsplash.it/960/600?random') no-repeat center center;
+		background-size: cover;
+		padding: 2em 0;
+	}
+
+	.teaser__text {
+		background-color: rgba(40,40,40,0.59);
+		padding: 1em 0;
+		text-align: center;
+	}
+
+	/* Acts-List (home) */
+
+	.content__acts-list {
+		padding: 1em 2em;
+	}
+
+	/* Footer */
+
+	.footer {
+		background-color: #0c0d0d;
+		padding: 2em;
+		overflow: auto;
+	}
+
+	.footer__minipressum {
+		width: 70%;
+		float: left;
+		text-align: center;
+		color: #fff;
+	}
+
+	.footer__social-media {
+		width: 30%;
+		float: right;
+	}
+
+	/* Lists */
+
+	.list--social-media {
+	}
+
+	.list__item {
+		float: left;
+		background-color: #fff;
+		height: 2em;
+		width: 2em;
+		line-height: 2em;
+		text-align: center;
+		border-radius: 50%;
+	}
+	.list__item + .list__item {
+		margin-left: 1em;
+	}
+
+	/* Menus */
+
+	.menu {
+		list-style-type: none;
+	}
+
+	.menu--main {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	.menu__item {
+		float: left;
+	}
