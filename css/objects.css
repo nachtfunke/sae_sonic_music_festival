@@ -8,14 +8,13 @@
 	.wrapper {
 		max-width: 960px;
 		margin: 0 auto;
-		background-color: #282828;
+		overflow-x: hidden;
 	}
 
 
 	/* Header */
 
 	.header {
-		background-color: #0c0d0d;
 		overflow: auto;
 		display: flex;
 		align-items: center;
@@ -25,7 +24,6 @@
 		width: 30%;
 		float: left;
 		padding: 1em;
-		border-right: 3px solid #fff;
 	}
 	.header__navigation {
 		width: 70%;
@@ -42,16 +40,14 @@
 	/* Teaser */
 
 	.content__teaser {
-		height: 50vh;
-		background: url('https://unsplash.it/960/600?random') no-repeat center center;
-		background-size: cover;
+		/* height: 50vh; */
 		padding: 2em 0;
 	}
 
 	.teaser__text {
-		background-color: rgba(40,40,40,0.59);
-		padding: 1em 0;
-		text-align: center;
+		padding: 1em 4em;
+		display: flex;
+		flex-direction: column-reverse;
 	}
 
 	/* Acts-List (home) */
@@ -60,10 +56,49 @@
 		padding: 1em 2em;
 	}
 
+	.acts-list__list {
+		overflow: auto;
+		margin-top: 2em;
+	}
+
+	.acts-list__list__item {
+		width: calc(25% - 3em);
+		float: left;
+		margin-right: 3em;
+	}
+
+	.acts-list__list__item:last-child {
+		margin-right: 0;
+	}
+	.acts-list__list__item:first-child {
+		margin-left: 1.5em;
+	}
+
+	/* Acts */
+
+	.act {
+		text-align: center;
+	}
+
+	.act__image {
+
+	}
+
+	.act__caption {
+
+	}
+
+	.act__name {
+
+	}
+
+	.act__genre {
+		margin-top: 0;
+	}
+
 	/* Footer */
 
 	.footer {
-		background-color: #0c0d0d;
 		padding: 2em;
 		overflow: auto;
 	}
@@ -71,8 +106,6 @@
 	.footer__minipressum {
 		width: 70%;
 		float: left;
-		text-align: center;
-		color: #fff;
 	}
 
 	.footer__social-media {
@@ -87,22 +120,12 @@
 
 	.list__item {
 		float: left;
-		background-color: #fff;
-		height: 2em;
-		width: 2em;
-		line-height: 2em;
-		text-align: center;
-		border-radius: 50%;
 	}
 	.list__item + .list__item {
 		margin-left: 1em;
 	}
 
 	/* Menus */
-
-	.menu {
-		list-style-type: none;
-	}
 
 	.menu--main {
 		display: flex;

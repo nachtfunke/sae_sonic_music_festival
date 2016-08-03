@@ -1,0 +1,176 @@
+
+	/* Wrapper-Klassen  */
+
+	.wrapper {
+		background-color: #282828;
+	}
+
+
+	/* Header */
+
+	.header {
+		background-color: #0c0d0d;
+	}
+
+	.header__logo {
+		border-right: 3px solid #fff;
+	}
+
+	/* Content */
+
+
+	/* Teaser */
+
+	.content__teaser {
+		background: url('https://unsplash.it/960/600?random') no-repeat center center;
+		background-size: cover;
+	}
+
+	.teaser__text {
+		background-color: rgba(40,40,40,0.59);
+		text-align: center;
+		font-family: Montserrat, sans-serif;
+		font-size: 2em;
+		text-transform: uppercase;
+	}
+
+	.teaser__headline {
+		color: #fff;
+		margin-top: 1em;
+		line-height: 0;
+	}
+
+	.teaser__acts-list {
+		transform: translateY(-4px);
+	}
+
+	.teaser__acts-list > li {
+		color: #e2bb34;
+		letter-spacing: 0.1ch;
+		display: inline-block;
+	}
+
+	.teaser__acts-list > li::after {
+		content: '||';
+		padding-left: 0.53ch;
+	}
+
+	.teaser__acts-list > li:last-child::after {
+		display: none;
+	}
+
+	/* Auflistung der Acts auf der Homepage */
+	.content__acts-list {
+
+	}
+
+	.acts-list__intro {
+		font-size: 1.5em;
+	}
+
+	.acts-list__intro h2 {
+		color: #1c80a8;
+	}
+
+	.acts-list__intro p {
+		color: #fff;
+	}
+
+	/* act */
+
+	.act {
+	}
+
+	.act__image {
+		padding-bottom: 100%;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 1em;
+	}
+
+	.act__image > img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	.act__caption {
+		font-size: 1.6em;
+	}
+
+	.act__name {
+		color: #33ccff;
+	}
+
+	.act__genre {
+		color: #1c80a8;
+		font-size: 0.6em;
+		text-transform: uppercase;
+	}
+
+	/* Footer */
+
+	.footer {
+		background-color: #0c0d0d;
+		position: relative;
+		overflow: visible;
+		margin-top: 6em;
+	}
+
+	.footer::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		background-color: inherit;
+		transform: rotate(-4deg);
+		transform-origin: top left;
+	}
+
+	.footer__minipressum, .footer__social-media {
+		z-index: 1;
+		position: relative;
+	}
+
+	.footer__minipressum {
+		text-align: center;
+		color: #fff;
+	}
+
+	.list__item {
+		background-color: #fff;
+		height: 2em;
+		width: 2em;
+		line-height: 2em;
+		text-align: center;
+		border-radius: 50%;
+	}
+
+	/* Menus */
+
+	.menu {
+		list-style-type: none;
+	}
+
+	.menu--main {
+		color: #fff;
+		font-size: 2.6em;
+	}
+
+	.menu--main > .menu__item {
+		text-transform: uppercase;
+	}
+
+	.menu--main > .menu__item:hover,
+	.menu--main > .menu__item.active  {
+		color: #33ccff;
+	}
+
+	.menu__item > a {
+		color: inherit;
+	}
